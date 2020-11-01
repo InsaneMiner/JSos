@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSos</title>
+	<link rel="stylesheet" type="text/css" href="system/style/boot.css">
+	<script type="text/javascript">
+		
+		function validate(){
+			if (document.getElementById("password").value == "password"){
+				return true;
+			}
+			else{
+				alert("Failed to login - wrong password");
+				return false;
+			}
+			
+		}
+	</script>
+</head>
+<body>
+	<div id="container" >
+		<h1 id="text">Welcome to JSos</h1>
+		<h1 id="text">This Javascript based operating system was made by joel schofield</h1>
+
+		<form id="login" action="system/os.html" onsubmit="return validate();">
+
+			<img src="system/images/user.jpg" width="200px" height="200px">
+			<h3 id="text">Welcome User</h3>
+			<br>
+			<h4 id="text">Please Enter Password</h4>
+			<input type="password" placeholder="Password" id="password" name="password">
+			<br>
+			<input type="submit" name="go" value="Login">
+		</form>
+
+	</div>
+</body>
+</html>
